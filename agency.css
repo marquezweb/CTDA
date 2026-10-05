@@ -195,15 +195,16 @@ h1 em { color: var(--orange); }
   .header-shell.scrolled .header { height: 66px; }
   .nav { top: 72px; }
   .header-shell.scrolled .nav { top: 66px; }
-  .hero { min-height: 700px; min-height: 100svh; }
+  .hero { min-height: clamp(600px, 82svh, 720px); }
   .hero-visual { inset: 0; clip-path: none; opacity: .9; }
   .hero-slide { object-position: 63% center; }
   .hero::after { background: linear-gradient(90deg, rgba(58,58,234,.89), rgba(58,58,234,.43)), linear-gradient(0deg, rgba(28,28,127,.58), transparent 70%); }
   .hero-mark { display: none; }
-  .hero-content { padding-top: 130px; padding-bottom: 53px; }
+  .hero-content { padding-top: 110px; padding-bottom: 28px; }
   h1 { font-size: clamp(43px, 10vw, 60px); max-width: 100%; letter-spacing: -.062em; }
   .hero-content p { font-size: 15px; max-width: 350px; margin-top: 20px; }
   .hero-actions { margin-top: 25px; }
+  .hero-bottom { height: 58px; }
   .hero-bottom span:last-child { display: none; }
   .intro { padding-top: 75px; padding-bottom: 90px; }
   .intro-copy { padding: 0; }
